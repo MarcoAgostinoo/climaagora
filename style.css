@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /*background-color: #241f21;*/
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #3f87a6, #ebf8e1, #f69d3c);
+    margin: 0;
+  }
+
+.main {
+    background-color: #2b98e0cc ;
+    color: white;
+    width: 500px;
+    border-radius: 25px;
+    
+    
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #241f21;
+    margin-top: 10px;
+}
+
+.cityinput {
+    margin-top: 20px;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 35px;
+    border: none;
+}
+
+#search {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.lupa {
+    height: 35px;
+    padding: 10px;
+    border: none;
+}
+
+.locationIcon {
+    height: 35px;
+    border: none;
+    margin-top: -10px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.weatherinf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -30px;
+}
+& h2 {
+    display: flex;
+}
+.temperature {
+    margin-left: 20px;
+}
+
+.conditionWeatger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -30px;
+    margin-top: 10px;
+}
+
+.detailsContainer{
+    
+}
+
+.detailsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.weather-icon{
+    height: 35px;
+    padding: 10px;
+    border: none;
+}
+.iconUmitity {
+    height: 35px;
+    padding: 10px;
+    border: none;
+}

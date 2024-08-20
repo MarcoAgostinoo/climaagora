@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima Já</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">Clima Já</h1>
+      <header class="container">
+        <input
+          class="cityinput"
+          id="cityinput"
+          type="text"
+          placeholder="Digite o nome da sua cidade"
+        />
+        <button id="search">
+          <img class="lupa" src="lupa.png" alt="Lupa" />
+        </button>
+      </header>
+
+      <section class="weatherinf" id="weaterInfo">
+        <h2>
+          <img class="locationIcon" src="location.png" alt="country" />
+          <span id="city">Maceió </span>
+          <p class="temperature" id="temperatura">38&deg;C</p>
+          <img src="#" alt="#Imagem do Pais" />
+        </h2>
+      </section>
+      <div class="conditionWeatger" id="conditionWeatger">
+        <p id="descripitionCondition">*Nublado</p>
+        <img
+          class="weather-icon"
+          id="weather-icon"
+          src="clima.png"
+          alt="#condição do tempo"
+        />
+      </div>
+      <div class="conditionWeatger" id="conditionWeatger">
+        <p id="humidity">48%</p>
+        <img
+          class="weather-icon"
+          id="weather-icon"
+          src="humidity.png"
+          alt="#condição do tempo"
+        />
+      </div>
+      <div class="conditionWeatger" id="conditionWeatger">
+        <p id="wind">30KM</p>
+        <img
+          class="weather-icon"
+          id="weather-icon"
+          src="wind.jpg"
+          alt="#condição do tempo"
+        />
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
