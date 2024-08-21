@@ -59,11 +59,15 @@ body {
 .locationIcon {
     height: 35px;
     border: none;
-    margin-top: -10px;
+    margin-top: -15px;
     margin-right: 10px;
     background-color: rgba(255, 255, 255, 0);
 }
 
+.imgCountry{
+    margin-left: 15px;
+    margin-top: -29px;
+}
 .weatherinf {
     display: flex;
     align-items: center;

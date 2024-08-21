@@ -6,7 +6,7 @@
     <title>Clima Já</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body>  
     <main class="main">
       <h1 class="title">Clima Já</h1>
       <header class="container">
@@ -15,28 +15,23 @@
           id="cityinput"
           type="text"
           placeholder="Digite o nome da sua cidade"
+          onkeyup="checkEnter(event)"
         />
         <button id="search">
           <img class="lupa" src="img/lupa.png" alt="Lupa" />
         </button>
       </header>
-
       <section class="weatherinf" id="weaterInfo">
         <h2>
-          <img class="locationIcon" src="location.png" alt="country" />
-          <span id="city">Maceió </span>
-          <p class="temperature" id="temperatura">38&deg;C</p>
-          <img src="#" alt="#Imagem do Pais" />
+          <img class="locationIcon" src="img/location.png" alt="country" />
+          <span id="city"></span>
+          <p class="temperature" id="temperatura"></p>
+          <img id="imgPais" class="imgCountry" alt="" />
         </h2>
       </section>
       <div class="conditionWeatger" id="conditionWeatger">
-        <p id="descripitionCondition">*Nublado</p>
-        <img
-          class="weather-icon"
-          id="weather-icon"
-          src="img/clima.png"
-          alt="#condição do tempo"
-        />
+        <p id="descripitionCondition"></p>
+        <p id="conditionIcon"></p>
       </div>
       <div class="conditionWeatger" id="conditionWeatger">
         <p id="humidity">48%</p>

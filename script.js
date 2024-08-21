@@ -6,6 +6,13 @@ const cityinput = document.getElementById("cityinput");
 const searchBtn = document.getElementById("search");
 
 const cityElement = document.getElementById("city");
+const tempElement = document.getElementById("temperatura");
+const countryFlag = document.getElementById("imgPais");
+const weatherCondition = document.getElementById("descripitionCondition");
+
+
+
+
 
 //functions
 
@@ -16,13 +23,29 @@ const getWeatherData = async (city) => {
     const res = await fetch(apiWeatherURL)
     const data = await res.json();
 
-    console.log(data);
+    return data;
 };
 
-const showWeatherData = (city) => {
-   getWeatherData(city)
-}; 
+const showWeatherData = async (city) => {
+    const data = await getWeatherData(city);
+    cityElement.innerHTML = data.name;
+    tempElement.innerHTML = parseInt(data.main.temp) + "°C";
+    countryFlag.src = `https://flagsapi.com/${data.sys.country}/flat/64.png`
+    weatherCondition.innerHTML = data.weather[0].description;
+    conditionIcon.setAttribute("src", `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+    umidityElement.innerHTML = `${data.main.imidity}%`;
 
+
+};
+
+//da pra usar tambem event.keyCode === 13 ao invez de if (event.key == 'Enter')
+const checkEnter = (event) => {
+    if (event.key == 'Enter') {
+        const city = cityinput.value;
+
+        showWeatherData(city);
+    }
+};
 //events
 searchBtn.addEventListener("click", (e) => {
     const city = cityinput.value;
