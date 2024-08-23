@@ -8,8 +8,8 @@
   </head>
   <body>  
     <main class="main">
-      <h1 class="title">Clima Já</h1>
-      <header class="container">
+      <h1 class="title">Consulte o Clima </h1>
+      <header class="container" class="">
         <input
           class="cityinput"
           id="cityinput"
@@ -21,37 +21,39 @@
           <img class="lupa" src="img/lupa.png" alt="Lupa" />
         </button>
       </header>
-      <section class="weatherinf" id="weaterInfo">
+      <div id="weather-data" class="hide">
+        <section class="weatherinf" id="weaterInfo">
         <h2>
-          <img class="locationIcon" src="img/location.png" alt="country" />
+          <img class="locationIcon" src="img/localidade.png" alt="country" />
           <span id="city"></span>
-          <p class="temperature" id="temperatura"></p>
+
           <img id="imgPais" class="imgCountry" alt="" />
         </h2>
       </section>
+      <p class="temperature" id="temperatura"></p>
       <div class="conditionWeatger" id="conditionWeatger">
         <p id="descripitionCondition"></p>
-        <p id="conditionIcon"></p>
+        <img id="weather-icon" src="" alt="">
       </div>
-      <div class="conditionWeatger" id="conditionWeatger">
-        <p id="humidity">48%</p>
+      <div class="conditionhumidity" id="conditionWeatger">
+        <p id="humidity"></p>
         <img
           class="weather-icon"
           id="weather-icon"
           src="img/humidity.png"
           alt="#condição do tempo"
         />
-      </div>
-      <div class="conditionWeatger" id="conditionWeatger">
-        <p id="wind">30KM</p>
+        <p id="wind" alt="humidade" class="wind"></p>
         <img
-          class="weather-icon"
+          class="conditionwind"
           id="weather-icon"
-          src="img/wind.jpg"
+          src="img/windicon.png"
           alt="#condição do tempo"
         />
       </div>
+      </div>
     </main>
+    
 
     <script src="script.js"></script>
   </body>

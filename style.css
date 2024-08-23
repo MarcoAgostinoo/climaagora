@@ -13,17 +13,27 @@ body {
   }
 
 .main {
-    background-color: #2b98e0cc ;
+    background-color: #7e8bd5cc ;
     color: white;
     width: 500px;
     border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #4d61d351;
     
     
+}
+.hide {
+    display: none;
+  }
+
+
+.aew{
+    display: none;
 }
 
 .title {
     text-align: center;
     margin-top: 20px;
+    margin-right: 50px;
 }
 
 .container {
@@ -41,6 +51,7 @@ body {
     padding: 20px;
     border-radius: 35px;
     border: none;
+    font-size: 15px;
 }
 
 #search {
@@ -59,9 +70,8 @@ body {
 .locationIcon {
     height: 35px;
     border: none;
-    margin-top: -15px;
+    margin-top: -12px;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 .imgCountry{
@@ -79,23 +89,28 @@ body {
     display: flex;
 }
 .temperature {
-    margin-left: 20px;
+    margin-left:-50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .conditionWeatger {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.conditionhumidity{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-left: -30px;
     margin-top: 10px;
+    font-weight: bold; 
+    text-transform: capitalize;
 }
 
-.detailsContainer{
-    
-}
-
-.detailsContainer {
+sContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,9 +122,19 @@ body {
     height: 35px;
     padding: 10px;
     border: none;
+    border-right: 1px solid #fff;
 }
 .iconUmitity {
     height: 35px;
     padding: 10px;
     border: none;
+}
+.conditionwind{
+    height: 35px;
+    padding: 10px;
+    border: none;
+}
+
+.wind {
+    margin-left: 10px;
 }
